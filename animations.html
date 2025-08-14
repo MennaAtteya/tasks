@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animations</title>
+<style>
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+  }
+
+  .box {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+  }
+
+  .square {
+    width: 50px;
+    height: 50px;
+     margin: 30px;
+    background-color: #ff4444;
+    animation: moveSquare 4s infinite;
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+  }
+
+  @keyframes moveSquare {
+    0% { transform: translate(0, 0); background-color: #47299b; }
+    25% { transform: translate(100px, 0); background-color: #23bad4; }
+    50% { transform: translate(100px, -100px); background-color: #e41a1a; }
+    75% { transform: translate(0, -100px); background-color: #eee9e0; }
+    100% { transform: translate(0, 0); background-color: #d41886; }
+  }
+
+  .scale {
+    background-color: #ffb84c;
+    animation: scaleBox 1.5s infinite alternate;
+  }
+  @keyframes scaleBox {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.5); }
+  }
+
+  .color {
+    background-color: #4cff9f;
+    animation: changeColor 3s infinite alternate;
+  }
+  @keyframes changeColor {
+    0% { background-color: #4cff9f; }
+    50% { background-color: #ff4cd9; }
+    100% { background-color: #4cff9f; }
+  }
+
+ 
+
+  
+</style>
+</head>
+<body>
+  <div class="square"></div>
+  <div class="box scale"></div>
+  <div class="box color"></div>
+</body>
+</html>
