@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Task</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 1fr 60px;
+    height: 100vh;
+    gap: 10px;
+  }
+
+  header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  nav {
+    grid-area: sidebar;
+    background-color: #f3dede;
+    padding: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main {
+    grid-area: main;
+    background-color: #ddd;
+    padding: 20px;
+  }
+
+  footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <header>My Grid Page</header>
+  <nav>
+    <ul>
+      <li>home</li>
+      <li>servies</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Welcome!</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto consequatur aut vel quibusdam rerum? Aspernatur possimus sed dignissimos perferendis, dicta eligendi quam consequatur explicabo similique nesciunt eveniet harum. Explicabo, aspernatur.</p>
+  </main>
+  <footer>© 2025 Grid </footer>
+</div>
+</body>
+</html>
