@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>transform</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    font-family: Arial, sans-serif;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #ff4c4c, #ffb84c);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.4s ease, background 0.4s;
+    box-shadow: 0 0 25px rgba(255,255,255,0.3);
+  }
+
+  .box:hover {
+    transform: rotate(15deg) scale(1.15) translateY(-15px);
+    background: linear-gradient(135deg, #44ff44, #44d9ff);
+  }
+
+  .box:active {
+    transform: rotate(-15deg) scale(1.05) translateY(10px);
+    background: linear-gradient(135deg, #ff44ff, #ff4c4c);
+  }
+</style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
