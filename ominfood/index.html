@@ -1,0 +1,147 @@
+
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Omnifood</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fdf1e9;
+    }
+    .btn-primary {
+      background-color: #d87d2a;
+      border-color: #d87d2a;
+    }
+    .btn-primary:hover {
+      background-color: #b36a22;
+      border-color: #b36a22;
+    }
+    .text-orange {
+      color: #d87d2a;
+    }
+    .bg-circle {
+      background-color: #FCE9D7;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -10;
+    }
+    .border-circle {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: 1px solid white;
+      background-color: transparent;
+      margin-left: -0.5rem;
+    }
+    .border-circle:first-child {
+      margin-left: 0;
+    }
+  </style>
+ </head>
+ <body>
+  <header class="container-fluid px-3 px-md-5 py-4 d-flex justify-content-between align-items-center">
+   <div class="d-flex align-items-center">
+    <img alt="Omnifood logo" class="img-fluid" style="width: 7rem;" src="./omnifood-logo.png"/>
+   </div>
+   <nav class="d-none d-md-flex align-items-center gap-4 fw-semibold">
+    <a class="text-dark text-decoration-none hover-underline" href="#">How it works</a>
+    <a class="text-dark text-decoration-none hover-underline" href="#">Meals</a>
+    <a class="text-dark text-decoration-none hover-underline" href="#">Testimonials</a>
+    <a class="text-dark text-decoration-none hover-underline" href="#">Pricing</a>
+   </nav>
+   <a class="d-none d-md-inline-block btn btn-primary btn-sm fw-semibold rounded" href="#">Try for free</a>
+  </header>
+  <main class="container px-3 px-md-5 pb-5">
+   <section class="row align-items-center align-items-md-start g-4 g-md-0">
+    <div class="col-12 col-md-6 order-md-2">
+     <div class="text-center text-md-end">
+      <img alt="Three meal bowls with rice, grilled chicken, and vegetables" class="img-fluid rounded w-75 w-md-50" src="hero-min.png" style="z-index: 3"/>
+     </div>
+    </div>
+    <div class="col-12 col-md-6 order-md-1">
+     <h1 class="fw-bolder display-4 text-dark mb-4">A healthy meal<br>delivered to your door,<br>every single day</h1>
+     <p class="text-secondary small mb-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, consectetur? Distinctio ratione tenetur animi ad commodi quo sit dicta laborum,<br> magni eveniet esse cum quae officiis perferendis impedit culpa aliquam!</p>
+     <div class="d-flex gap-3 mb-4">
+      <button class="btn btn-primary btn-sm fw-semibold">Start eating well</button>
+      <button class="btn btn-light btn-sm fw-semibold border border-secondary-subtle">Learn more <span class="ms-1 fs-5">↓</span></button>
+     </div>
+     <p class="small fw-semibold text-orange">250,000+ <span class="fw-normal text-secondary">meals delivered last year!</span></p>
+    </div>
+   </section>
+  </main>
+  <footer class="border-top py-4" style="border-color: #f0d9c7;">
+   <p class="text-center small text-secondary mb-4 text-uppercase fw-semibold" style="letter-spacing: 0.1em;">As featured in</p>
+   <div class="container d-flex flex-wrap justify-content-center align-items-center gap-4">
+    <img alt="not image" class="img-fluid" style="height: 4rem;" src="business-insider.png"/>
+    <img alt="not image" class="img-fluid" style="height: 5rem;" src="r.jpg"/>
+    <img alt="not image" class="img-fluid" style="height: 5rem;" src="f.png"/>
+    <img alt="not image" class="img-fluid" style="height: 5rem;" src="m.jpg"/>
+   </div>
+  </footer>
+  <section class="container px-3 py-5">
+  <div class="mx-auto" style="max-width: 64rem;">
+    <p class="small fw-semibold text-orange text-uppercase mb-2" style="letter-spacing: 0.1em;">How it works</p>
+    <h2 class="display-6 fw-bolder mb-5">Your daily dose of health in 3 simple steps</h2>
+    <div class="row g-5 align-items-center">
+      <div class="container-fluid ms-5">
+
+    
+                <div class="row align-items-center my-5 flex-column flex-md-row">
+                    <div class="col-md-6 order-2 order-md-1">
+                    <span class="step-number mb-1" style="font-size: 5.4rem; color: #ddd; font-weight: bold;">01</span>
+                    <h3 class="step-heading mb-1" style="font-size: 2rem;">Tell us what you like (and what not)</h3>
+                    <p class="step-description rubik-text mb-0" style="font-size: 1.2rem; color: #555;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit rem praesentium, ipsam optio harum provident explicabo recusandae perferendis facere totam! Ratione sapiente illo temporibus, aspernatur magni eaque ullam rerum.
+                    </p>
+                    </div>
+
+                    <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center position-relative">
+                    <div class="bg-circle position-absolute"></div>
+                    <img src="ff.gif" alt="App screen 1" style="width: 190px; height: 380px; z-index: 1;">
+                    </div>
+
+                </div>
+                <div class="row align-items-center my-5 flex-column flex-md-row">
+                    <div class="col-md-6 order-1 order-md-1 d-flex justify-content-center align-items-center position-relative">
+                    <div class="bg-circle position-absolute"></div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPqqCcBi2KX9GWiv1ROifJLVvP3GtP5CgaQ&s" alt="not image" style="width: 290px; height: 500px; z-index: 1;">
+                    </div>
+
+                    <div class="col-md-6 order-2 order-md-2">
+                    <span class="step-number mb-1" style="font-size: 5.4rem; color: #ddd; font-weight: bold;">02</span>
+                    <h3 class="step-heading mb-1" style="font-size: 2rem;">Approve your weekly meal plan</h3>
+                    <p class="step-description rubik-text mb-0" style="font-size: 1.2rem; color: #555;">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi qui laudantium eum aut voluptatem ad assumenda iusto iste quod perspiciatis voluptas, praesentium eos commodi error rerum recusandae! Assumenda, ducimus eum?
+                    </p>
+                    </div>
+                </div>
+                <div class="row align-items-center my-5 flex-column flex-md-row">
+                    <div class="col-md-6 order-2 order-md-1">
+                    <span class="step-number mb-1" style="font-size: 5.4rem; color: #ddd; font-weight: bold;">03</span>
+                    <h3 class="step-heading mb-1" style="font-size: 2rem;">Receive meals at convenient time</h3>
+                    <p class="step-description rubik-text mb-0" style="font-size: 1.2rem; color: #555;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor ab cumque deleniti quo. Nemo magni nihil asperiores culpa ullam harum vel quo voluptatum a. Pariatur nihil dolor enim fuga.
+                    </p>
+
+                    </div>
+                    <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center position-relative">
+                    <div class="bg-circle position-absolute"></div>
+                    <img src="i.jpg"  alt="not image" style="width: 300px; height: 500px; z-index: 1;">
+                    </div>
+                </div>
+            </div>
+        <footer>
+
+            <p>© 2025 Omnifood. All rights reserved.</p>
+        </footer>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ </body>
+</html>
