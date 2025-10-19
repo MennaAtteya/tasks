@@ -1,0 +1,198 @@
+{
+  "site": {
+    "name": "E-tutor",
+    "searchPlaceholder": "What do you want learn...",
+    "nav": [
+      {"label": "Home", "href": "/"},
+      {"label": "Courses", "href": "/courses"},
+      {"label": "About", "href": "/about"},
+      {"label": "Contact", "href": "/contact"},
+      {"label": "Become an Instructor", "href": "/instructor"}
+    ],
+    "auth": [
+      {"label": "Create Account", "href": "/signup"},
+      {"label": "Sign In", "href": "/signin"}
+    ]
+  },
+  "hero": {
+    "headline": "Learn with expert anytime anywhere",
+    "subtext": "Our mision is to help people to find the best course online and learn with expert anytime, anywhere.",
+    "primaryCta": {"label": "Create Account", "href": "/signup"}
+  },
+  "categories": {
+    "sectionTitle": "Browse top category",
+    "note": "We have more category & subcategory.",
+    "browseAll": {"label": "Browse All", "href": "/categories"},
+    "items": [
+      {"name": "Personal Development", "courses": 20126},
+      {"name": "Office Productivity", "courses": 13932},
+      {"name": "Marketing", "courses": 12068},
+      {"name": "Photography & Video", "courses": 6196}
+    ]
+  },
+  "bestSelling": {
+    "sectionTitle": "Best selling courses",
+    "browseAll": {"label": "Browse all Courses", "href": "/courses?sort=best"},
+    "courses": [
+      {
+        "category": "Design",
+        "price": 57,
+        "title": "Machine Learning A-Z™: Hands-On Python & R In Data...",
+        "rating": 5.0,
+        "students": 265700
+      },
+      {
+        "category": "Developments",
+        "price": 57,
+        "title": "The Complete 2021 Web Development Bootcamp",
+        "rating": 5.0,
+        "students": 265700
+      },
+      {
+        "category": "Business",
+        "price": 57,
+        "title": "Learn Python Programming Masterclass",
+        "rating": 5.0,
+        "students": 265700
+      },
+      {
+        "category": "Marketing",
+        "price": 57,
+        "title": "The Complete Digital Marketing Course - 12 Courses in 1",
+        "rating": 5.0,
+        "students": 265700
+      },
+      {
+        "category": "IT & Software",
+        "price": 57,
+        "title": "Reiki Level I, II and Master/Teacher Program",
+        "rating": 5.0,
+        "students": 265700
+      }
+    ]
+  },
+  "recent": {
+    "sectionTitle": "Recently added courses",
+    "browseAll": {"label": "Browse all Courses", "href": "/courses?sort=recent"},
+    "courses": [
+      {
+        "category": "Design",
+        "price": 57,
+        "title": "The Python Mega Course: Build 10 Real World Applications",
+        "rating": 5.0,
+        "students": 265700
+      },
+      {
+        "category": "IT & Software",
+        "price": 57,
+        "title": "Facebook Ads & Facebook Marketing MASTERY 2021 Cours...",
+        "rating": 5.0,
+        "students": 265700
+      },
+      {
+        "category": "Developments",
+        "price": 57,
+        "title": "2021 Complete Python Bootcamp From Zero to Hero in Python",
+        "rating": 5.0,
+        "students": 265700
+      },
+      {
+        "category": "Marketing",
+        "price": 57,
+        "title": "How to get Diamond in soloQ | League of Legends | Season 11",
+        "rating": 5.0,
+        "students": 265700
+      }
+    ]
+  },
+  "instructorCta": {
+    "title": "Become an instructor",
+    "blurb": "Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.",
+    "stepsTitle": "Your teaching & earning steps",
+    "steps": [
+      "Apply to become instructor",
+      "Build & edit your profile",
+      "Create your new course",
+      "Start teaching & earning"
+    ],
+    "cta": {"label": "Become Instructor", "href": "/instructor"}
+  },
+  "topInstructors": {
+    "sectionTitle": "Top instructors of the month",
+    "items": [
+      {
+        "name": "Devon Lane",
+        "title": "Senior Developer",
+        "rating": 4.6,
+        "students": 854
+      },
+      {
+        "name": "Darrell Steward",
+        "title": "Digital Product Designer",
+        "rating": 4.9,
+        "students": 451444
+      },
+      {
+        "name": "Albert Flores",
+        "title": "Adobe Instructor",
+        "rating": 4.7,
+        "students": 511123
+      },
+      {
+        "name": "Kathryn Murphy",
+        "title": "Lead Developer",
+        "rating": 4.2,
+        "students": 2711
+      }
+    ],
+    "cta": {"label": "Become Instructor", "href": "/instructor"},
+    "note": "Thousands of students waiting for a instructor. Start teaching & earning now!."
+  },
+  "trusted": {
+    "headline": "6.3k trusted companies",
+    "description": "Nullam egestas tellus at enim ornare tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra."
+  },
+  "footer": {
+    "brand": {
+      "name": "E-tutor",
+      "tagline": "Aliquam rhoncus ligula est, non pulvinar elit convallis nec. Donec mattis odio at."
+    },
+    "columns": [
+      {
+        "title": "Top 4 Category",
+        "links": [
+          {"label": "Development", "href": "/categories/development"},
+          {"label": "Finance & Accounting", "href": "/categories/finance-accounting"},
+          {"label": "Design", "href": "/categories/design"},
+          {"label": "Business", "href": "/categories/business"}
+        ]
+      },
+      {
+        "title": "Quick Links",
+        "links": [
+          {"label": "About", "href": "/about"},
+          {"label": "Become Instructor", "href": "/instructor"},
+          {"label": "Contact", "href": "/contact"},
+          {"label": "Career", "href": "/career"}
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {"label": "Help Center", "href": "/help"},
+          {"label": "FAQs", "href": "/faqs"},
+          {"label": "Terms & Condition", "href": "/terms"},
+          {"label": "Privacy Policy", "href": "/privacy"}
+        ]
+      },
+      {
+        "title": "Downlaod our app",
+        "links": [
+          {"label": "Download now", "href": "/app-store"},
+          {"label": "Download now", "href": "/play-store"}
+        ]
+      }
+    ],
+    "copyright": "© 2021 - Eduflex. Designed by Templatecookie. All rights reserved"
+  }
+}
