@@ -1,147 +1,514 @@
-
+<!doctype html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Omnifood</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #fdf1e9;
-    }
-    .btn-primary {
-      background-color: #d87d2a;
-      border-color: #d87d2a;
-    }
-    .btn-primary:hover {
-      background-color: #b36a22;
-      border-color: #b36a22;
-    }
-    .text-orange {
-      color: #d87d2a;
-    }
-    .bg-circle {
-      background-color: #FCE9D7;
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      position: absolute;
-      z-index: -10;
-    }
-    .border-circle {
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      border: 1px solid white;
-      background-color: transparent;
-      margin-left: -0.5rem;
-    }
-    .border-circle:first-child {
-      margin-left: 0;
-    }
-  </style>
- </head>
- <body>
-  <header class="container-fluid px-3 px-md-5 py-4 d-flex justify-content-between align-items-center">
-   <div class="d-flex align-items-center">
-    <img alt="Omnifood logo" class="img-fluid" style="width: 7rem;" src="./omnifood-logo.png"/>
-   </div>
-   <nav class="d-none d-md-flex align-items-center gap-4 fw-semibold">
-    <a class="text-dark text-decoration-none hover-underline" href="#">How it works</a>
-    <a class="text-dark text-decoration-none hover-underline" href="#">Meals</a>
-    <a class="text-dark text-decoration-none hover-underline" href="#">Testimonials</a>
-    <a class="text-dark text-decoration-none hover-underline" href="#">Pricing</a>
-   </nav>
-   <a class="d-none d-md-inline-block btn btn-primary btn-sm fw-semibold rounded" href="#">Try for free</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E-tutor - Learn with expert anytime anywhere</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Site Styles -->
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="bi bi-mortarboard-fill text-primary me-1"></i>
+        E-tutor
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#instructor-cta">Become an Instructor</a></li>
+        </ul>
+
+        <form class="d-none d-lg-flex me-3" role="search" onsubmit="return false;">
+          <div class="input-group">
+            <span class="input-group-text bg-light border-0"><i class="bi bi-search"></i></span>
+            <input class="form-control border-0 bg-light" type="search" placeholder="What do you want learn..." aria-label="Search" />
+          </div>
+        </form>
+
+        <div class="d-flex gap-2">
+          <a href="#instructor-cta" class="btn btn-outline-secondary d-none d-lg-inline-flex">Become an Instructor</a>
+          <a href="#" class="btn btn-primary">Create Account</a>
+          <a href="#" class="btn btn-outline-primary">Sign In</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="py-5 py-lg-6 bg-body-tertiary">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-sm mb-3">Learn with expert anytime anywhere</h1>
+          <p class="text-secondary mb-4">Our mision is to help people to find the best course online and learn with expert anytime, anywhere.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#" class="btn btn-primary btn-lg">Create Account</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img class="img-fluid rounded-4 shadow-sm hero-img" alt="Students learning together" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1600&auto=format&fit=crop" />
+        </div>
+      </div>
+    </div>
   </header>
-  <main class="container px-3 px-md-5 pb-5">
-   <section class="row align-items-center align-items-md-start g-4 g-md-0">
-    <div class="col-12 col-md-6 order-md-2">
-     <div class="text-center text-md-end">
-      <img alt="Three meal bowls with rice, grilled chicken, and vegetables" class="img-fluid rounded w-75 w-md-50" src="hero-min.png" style="z-index: 3"/>
-     </div>
-    </div>
-    <div class="col-12 col-md-6 order-md-1">
-     <h1 class="fw-bolder display-4 text-dark mb-4">A healthy meal<br>delivered to your door,<br>every single day</h1>
-     <p class="text-secondary small mb-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, consectetur? Distinctio ratione tenetur animi ad commodi quo sit dicta laborum,<br> magni eveniet esse cum quae officiis perferendis impedit culpa aliquam!</p>
-     <div class="d-flex gap-3 mb-4">
-      <button class="btn btn-primary btn-sm fw-semibold">Start eating well</button>
-      <button class="btn btn-light btn-sm fw-semibold border border-secondary-subtle">Learn more <span class="ms-1 fs-5">↓</span></button>
-     </div>
-     <p class="small fw-semibold text-orange">250,000+ <span class="fw-normal text-secondary">meals delivered last year!</span></p>
-    </div>
-   </section>
-  </main>
-  <footer class="border-top py-4" style="border-color: #f0d9c7;">
-   <p class="text-center small text-secondary mb-4 text-uppercase fw-semibold" style="letter-spacing: 0.1em;">As featured in</p>
-   <div class="container d-flex flex-wrap justify-content-center align-items-center gap-4">
-    <img alt="not image" class="img-fluid" style="height: 4rem;" src="business-insider.png"/>
-    <img alt="not image" class="img-fluid" style="height: 5rem;" src="r.jpg"/>
-    <img alt="not image" class="img-fluid" style="height: 5rem;" src="f.png"/>
-    <img alt="not image" class="img-fluid" style="height: 5rem;" src="m.jpg"/>
-   </div>
-  </footer>
-  <section class="container px-3 py-5">
-  <div class="mx-auto" style="max-width: 64rem;">
-    <p class="small fw-semibold text-orange text-uppercase mb-2" style="letter-spacing: 0.1em;">How it works</p>
-    <h2 class="display-6 fw-bolder mb-5">Your daily dose of health in 3 simple steps</h2>
-    <div class="row g-5 align-items-center">
-      <div class="container-fluid ms-5">
 
-    
-                <div class="row align-items-center my-5 flex-column flex-md-row">
-                    <div class="col-md-6 order-2 order-md-1">
-                    <span class="step-number mb-1" style="font-size: 5.4rem; color: #ddd; font-weight: bold;">01</span>
-                    <h3 class="step-heading mb-1" style="font-size: 2rem;">Tell us what you like (and what not)</h3>
-                    <p class="step-description rubik-text mb-0" style="font-size: 1.2rem; color: #555;">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit rem praesentium, ipsam optio harum provident explicabo recusandae perferendis facere totam! Ratione sapiente illo temporibus, aspernatur magni eaque ullam rerum.
-                    </p>
-                    </div>
+  <!-- CATEGORIES -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="h3 fw-bold mb-1">Browse top category</h2>
+      </div>
 
-                    <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center position-relative">
-                    <div class="bg-circle position-absolute"></div>
-                    <img src="ff.gif" alt="App screen 1" style="width: 190px; height: 380px; z-index: 1;">
-                    </div>
-
-                </div>
-                <div class="row align-items-center my-5 flex-column flex-md-row">
-                    <div class="col-md-6 order-1 order-md-1 d-flex justify-content-center align-items-center position-relative">
-                    <div class="bg-circle position-absolute"></div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPqqCcBi2KX9GWiv1ROifJLVvP3GtP5CgaQ&s" alt="not image" style="width: 290px; height: 500px; z-index: 1;">
-                    </div>
-
-                    <div class="col-md-6 order-2 order-md-2">
-                    <span class="step-number mb-1" style="font-size: 5.4rem; color: #ddd; font-weight: bold;">02</span>
-                    <h3 class="step-heading mb-1" style="font-size: 2rem;">Approve your weekly meal plan</h3>
-                    <p class="step-description rubik-text mb-0" style="font-size: 1.2rem; color: #555;">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi qui laudantium eum aut voluptatem ad assumenda iusto iste quod perspiciatis voluptas, praesentium eos commodi error rerum recusandae! Assumenda, ducimus eum?
-                    </p>
-                    </div>
-                </div>
-                <div class="row align-items-center my-5 flex-column flex-md-row">
-                    <div class="col-md-6 order-2 order-md-1">
-                    <span class="step-number mb-1" style="font-size: 5.4rem; color: #ddd; font-weight: bold;">03</span>
-                    <h3 class="step-heading mb-1" style="font-size: 2rem;">Receive meals at convenient time</h3>
-                    <p class="step-description rubik-text mb-0" style="font-size: 1.2rem; color: #555;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor ab cumque deleniti quo. Nemo magni nihil asperiores culpa ullam harum vel quo voluptatum a. Pariatur nihil dolor enim fuga.
-                    </p>
-
-                    </div>
-                    <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center position-relative">
-                    <div class="bg-circle position-absolute"></div>
-                    <img src="i.jpg"  alt="not image" style="width: 300px; height: 500px; z-index: 1;">
-                    </div>
-                </div>
+      <div class="row g-3 g-lg-4 mb-3">
+        <div class="col-6 col-lg-3">
+          <div class="card hover-lift h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="badge bg-primary-subtle text-primary">Personal Development</span>
+                <i class="bi bi-person-badge fs-5 text-secondary"></i>
+              </div>
+              <p class="mb-0 text-secondary small">20,126 Courses</p>
             </div>
-        <footer>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card hover-lift h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="badge bg-primary-subtle text-primary">Office Productivity</span>
+                <i class="bi bi-building fs-5 text-secondary"></i>
+              </div>
+              <p class="mb-0 text-secondary small">13,932 Courses</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card hover-lift h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="badge bg-primary-subtle text-primary">Marketing</span>
+                <i class="bi bi-megaphone fs-5 text-secondary"></i>
+              </div>
+              <p class="mb-0 text-secondary small">12,068 Courses</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card hover-lift h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="badge bg-primary-subtle text-primary">Photography & Video</span>
+                <i class="bi bi-camera-reels fs-5 text-secondary"></i>
+              </div>
+              <p class="mb-0 text-secondary small">6,196 Courses</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <p>© 2025 Omnifood. All rights reserved.</p>
-        </footer>
-</section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
- </body>
+      <div class="text-center text-secondary small">
+        We have more category & subcategory. <a href="#" class="fw-semibold">Browse All</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLING COURSES -->
+  <section id="courses" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h3 class="h3 fw-bold mb-0">Best selling courses</h3>
+      </div>
+
+      <div class="row g-3 g-lg-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card course-card h-100">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1200&auto=format&fit=crop" alt="Design course" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary">Design</span>
+                <span class="price">$57</span>
+              </div>
+              <h5 class="card-title mb-2">Machine Learning A-Z™: Hands-On Python & R In Data...</h5>
+              <div class="d-flex align-items-center small text-secondary">
+                <i class="bi bi-star-fill text-warning me-1"></i>
+                <span class="me-2">5.0</span>
+                <span>265.7K students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card course-card h-100">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Development course" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary">Developments</span>
+                <span class="price">$57</span>
+              </div>
+              <h5 class="card-title mb-2">The Complete 2021 Web Development Bootcamp</h5>
+              <div class="d-flex align-items-center small text-secondary">
+                <i class="bi bi-star-fill text-warning me-1"></i>
+                <span class="me-2">5.0</span>
+                <span>265.7K students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card course-card h-100">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="Business course" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary">Business</span>
+                <span class="price">$57</span>
+              </div>
+              <h5 class="card-title mb-2">Learn Python Programming Masterclass</h5>
+              <div class="d-flex align-items-center small text-secondary">
+                <i class="bi bi-star-fill text-warning me-1"></i>
+                <span class="me-2">5.0</span>
+                <span>265.7K students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card course-card h-100">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Marketing course" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary">Marketing</span>
+                <span class="price">$57</span>
+              </div>
+              <h5 class="card-title mb-2">The Complete Digital Marketing Course - 12 Courses in 1</h5>
+              <div class="d-flex align-items-center small text-secondary">
+                <i class="bi bi-star-fill text-warning me-1"></i>
+                <span class="me-2">5.0</span>
+                <span>265.7K students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card course-card h-100">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="IT and Software" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary">IT & Software</span>
+                <span class="price">$57</span>
+              </div>
+              <h5 class="card-title mb-2">Reiki Level I, II and Master/Teacher Program</h5>
+              <div class="d-flex align-items-center small text-secondary">
+                <i class="bi bi-star-fill text-warning me-1"></i>
+                <span class="me-2">5.0</span>
+                <span>265.7K students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-secondary">Browse all Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENTLY ADDED COURSES -->
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h3 class="h3 fw-bold mb-0">Recently added courses</h3>
+      </div>
+
+      <div class="row g-3 g-lg-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card course-card h-100">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Design course" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary">Design</span>
+                <span class="price">$57</span>
+              </div>
+              <h5 class="card-title mb-2">The Python Mega Course: Build 10 Real World Applications</h5>
+              <div class="d-flex align-items-center small text-secondary">
+                <i class="bi bi-star-fill text-warning me-1"></i>
+                <span class="me-2">5.0</span>
+                <span>265.7K students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card course-card h-100">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Marketing course" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary">IT & Software</span>
+                <span class="price">$57</span>
+              </div>
+              <h5 class="card-title mb-2">Facebook Ads & Facebook Marketing MASTERY 2021 Cours...</h5>
+              <div class="d-flex align-items-center small text-secondary">
+                <i class="bi bi-star-fill text-warning me-1"></i>
+                <span class="me-2">5.0</span>
+                <span>265.7K students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card course-card h-100">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="Development" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary">Developments</span>
+                <span class="price">$57</span>
+              </div>
+              <h5 class="card-title mb-2">2021 Complete Python Bootcamp From Zero to Hero in Python</h5>
+              <div class="d-flex align-items-center small text-secondary">
+                <i class="bi bi-star-fill text-warning me-1"></i>
+                <span class="me-2">5.0</span>
+                <span>265.7K students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card course-card h-100">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?q=80&w=1200&auto=format&fit=crop" alt="Marketing" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary">Marketing</span>
+                <span class="price">$57</span>
+              </div>
+              <h5 class="card-title mb-2">How to get Diamond in soloQ | League of Legends | Season 11</h5>
+              <div class="d-flex align-items-center small text-secondary">
+                <i class="bi bi-star-fill text-warning me-1"></i>
+                <span class="me-2">5.0</span>
+                <span>265.7K students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-secondary">Browse all Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BECOME AN INSTRUCTOR CTA + STEPS -->
+  <section id="instructor-cta" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-5">
+          <div class="p-4 rounded-4 bg-primary text-white h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="fw-bold mb-2">Become an instructor</h3>
+              <p class="mb-4 small">Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
+            </div>
+            <div>
+              <a class="btn btn-light text-primary fw-semibold" href="#">Become Instructor</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card h-100">
+            <div class="card-body">
+              <h4 class="h5 fw-bold mb-4">Your teaching & earning steps</h4>
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="step-item h-100 p-3 border rounded-3">
+                    <div class="step-num">1</div>
+                    <div class="fw-semibold">Apply to become instructor</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="step-item h-100 p-3 border rounded-3">
+                    <div class="step-num">2</div>
+                    <div class="fw-semibold">Build & edit your profile</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="step-item h-100 p-3 border rounded-3">
+                    <div class="step-num">3</div>
+                    <div class="fw-semibold">Create your new course</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="step-item h-100 p-3 border rounded-3">
+                    <div class="step-num">4</div>
+                    <div class="fw-semibold">Start teaching & earning</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP INSTRUCTORS -->
+  <section class="py-5">
+    <div class="container">
+      <h3 class="h3 fw-bold text-center mb-4">Top instructors of the month</h3>
+
+      <div class="row g-3 g-lg-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="card h-100 text-center instructor-card">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Devon Lane" />
+            <div class="card-body">
+              <h5 class="card-title mb-1">Devon Lane</h5>
+              <div class="text-secondary small mb-2">Senior Developer</div>
+              <div class="small text-secondary"><i class="bi bi-star-fill text-warning me-1"></i>4.6 · <span>854 students</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card h-100 text-center instructor-card">
+            <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Darrell Steward" />
+            <div class="card-body">
+              <h5 class="card-title mb-1">Darrell Steward</h5>
+              <div class="text-secondary small mb-2">Digital Product Designer</div>
+              <div class="small text-secondary"><i class="bi bi-star-fill text-warning me-1"></i>4.9 · <span>451,444 students</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card h-100 text-center instructor-card">
+            <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Albert Flores" />
+            <div class="card-body">
+              <h5 class="card-title mb-1">Albert Flores</h5>
+              <div class="text-secondary small mb-2">Adobe Instructor</div>
+              <div class="small text-secondary"><i class="bi bi-star-fill text-warning me-1"></i>4.7 · <span>511,123 students</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card h-100 text-center instructor-card">
+            <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Kathryn Murphy" />
+            <div class="card-body">
+              <h5 class="card-title mb-1">Kathryn Murphy</h5>
+              <div class="text-secondary small mb-2">Lead Developer</div>
+              <div class="small text-secondary"><i class="bi bi-star-fill text-warning me-1"></i>4.2 · <span>2,711 students</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center small text-secondary mt-3">Thousands of students waiting for a instructor. Start teaching & earning now!. <a href="#">Become Instructor</a></p>
+    </div>
+  </section>
+
+  <!-- TRUSTED COMPANIES -->
+  <section class="py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-lg-4">
+          <h4 class="mb-2">6.3k trusted companies</h4>
+          <p class="text-secondary small mb-0">Nullam egestas tellus at enim ornare tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+            <img class="brand-logo" src="https://logo.clearbit.com/netflix.com" alt="Netflix" />
+            <img class="brand-logo" src="https://logo.clearbit.com/youtube.com" alt="YouTube" />
+            <img class="brand-logo" src="https://logo.clearbit.com/google.com" alt="Google" />
+            <img class="brand-logo" src="https://logo.clearbit.com/lenovo.com" alt="Lenovo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-5 bg-dark text-light" id="about">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center mb-2">
+            <i class="bi bi-mortarboard-fill text-primary me-2 fs-4"></i>
+            <span class="fw-bold">E-tutor</span>
+          </div>
+          <p class="small text-white-50">Aliquam rhoncus ligula est, non pulvinar elit convallis nec. Donec mattis odio at.</p>
+          <div class="d-flex gap-2">
+            <a class="btn btn-sm btn-outline-light" href="#" aria-label="facebook"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-sm btn-outline-light" href="#" aria-label="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a class="btn btn-sm btn-outline-light" href="#" aria-label="github"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-white">Top 4 Category</h6>
+          <ul class="list-unstyled small text-white-50 mb-0">
+            <li>Development</li>
+            <li>Finance & Accounting</li>
+            <li>Design</li>
+            <li>Business</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-white">Quick Links</h6>
+          <ul class="list-unstyled small text-white-50 mb-0">
+            <li>About</li>
+            <li>Become Instructor</li>
+            <li>Contact</li>
+            <li>Career</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-white">Support</h6>
+          <ul class="list-unstyled small text-white-50 mb-0">
+            <li>Help Center</li>
+            <li>FAQs</li>
+            <li>Terms & Condition</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2" id="contact">
+          <h6 class="text-white">Downlaod our app</h6>
+          <div class="d-flex flex-column gap-2">
+            <a class="btn btn-outline-light btn-sm" href="#"><i class="bi bi-apple me-1"></i> App Store</a>
+            <a class="btn btn-outline-light btn-sm" href="#"><i class="bi bi-google-play me-1"></i> Play Store</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary-subtle mt-4 py-3">
+        <div class="small text-center text-white-50">© 2021 - Eduflex. Designed by Templatecookie. All rights reserved</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Site JS -->
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
