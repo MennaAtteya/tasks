@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E‑tutor — Learn with expert anytime anywhere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Top mini bar -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <nav class="topnav">
+          <a href="#">Home</a>
+          <a href="#courses">Courses</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#instructor">Become an instructor</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main header -->
+    <header class="site-header">
+      <div class="container header__row">
+        <button class="nav-toggle" aria-label="Open menu">
+          <i class="ri-menu-line"></i>
+        </button>
+        <a class="brand" href="#">
+          <span class="brand__logo"><i class="ri-graduation-cap-fill"></i></span>
+          <span class="brand__text">E‑tutor</span>
+        </a>
+
+        <form class="search" role="search">
+          <i class="ri-search-line"></i>
+          <input type="search" placeholder="What do you want learn…" aria-label="Search" />
+        </form>
+
+        <div class="header__actions">
+          <button class="icon-btn" aria-label="Wishlist"><i class="ri-heart-line"></i></button>
+          <button class="icon-btn" aria-label="Cart"><i class="ri-shopping-cart-line"></i></button>
+          <a class="btn btn--light" href="#">Create Account</a>
+          <a class="btn btn--primary" href="#">Sign In</a>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <form class="search search--mobile" role="search">
+          <i class="ri-search-line"></i>
+          <input type="search" placeholder="Search courses" aria-label="Search" />
+        </form>
+        <nav class="mobile-nav">
+          <a href="#">Home</a>
+          <a href="#courses">Courses</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#instructor">Become an instructor</a>
+        </nav>
+        <div class="mobile-cta">
+          <a class="btn btn--light" href="#">Create Account</a>
+          <a class="btn btn--primary" href="#">Sign In</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1>Learn with expert anytime anywhere</h1>
+          <p>Our mission is to help people to find the best course online and learn with expert anytime, anywhere.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#">Create Account</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1280&q=60" alt="Teacher presenting in a class" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+      <div class="container">
+        <h2 class="section__title">Browse top category</h2>
+        <div class="categories">
+          <article class="category">
+            <div class="category__icon"><i class="ri-user-star-line"></i></div>
+            <h3>Personal Development</h3>
+            <p>20,126 Courses</p>
+          </article>
+          <article class="category">
+            <div class="category__icon"><i class="ri-briefcase-4-line"></i></div>
+            <h3>Office Productivity</h3>
+            <p>13,932 Courses</p>
+          </article>
+          <article class="category">
+            <div class="category__icon"><i class="ri-megaphone-line"></i></div>
+            <h3>Marketing</h3>
+            <p>12,068 Courses</p>
+          </article>
+          <article class="category">
+            <div class="category__icon"><i class="ri-camera-3-line"></i></div>
+            <h3>Photography & Video</h3>
+            <p>6,196 Courses</p>
+          </article>
+          <article class="category">
+            <div class="category__icon"><i class="ri-code-s-slash-line"></i></div>
+            <h3>Development</h3>
+            <p>26,517 Courses</p>
+          </article>
+        </div>
+        <div class="section__footer">
+          <a href="#" class="link">Browse All</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best selling courses -->
+    <section class="section" id="best-selling">
+      <div class="container">
+        <h2 class="section__title">Best selling courses</h2>
+        <div class="courses">
+          <!-- Course 1 -->
+          <article class="course">
+            <div class="course__thumb">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=60" alt="Students collaborating" />
+              <span class="badge">DESIGN</span>
+              <span class="price">$57</span>
+            </div>
+            <div class="course__body">
+              <h3>Machine Learning A‑Z: Hands‑On Python & R</h3>
+              <div class="meta">
+                <span class="rating"><i class="ri-star-fill"></i> 5.0</span>
+                <span class="dot"></span>
+                <span class="students">265.7K students</span>
+              </div>
+            </div>
+          </article>
+          <!-- Course 2 -->
+          <article class="course">
+            <div class="course__thumb">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=60" alt="Developers meeting" />
+              <span class="badge badge--blue">DEVELOPMENT</span>
+              <span class="price">$57</span>
+            </div>
+            <div class="course__body">
+              <h3>The Complete 2025 Web Development Bootcamp</h3>
+              <div class="meta">
+                <span class="rating"><i class="ri-star-fill"></i> 5.0</span>
+                <span class="dot"></span>
+                <span class="students">265.7K students</span>
+              </div>
+            </div>
+          </article>
+          <!-- Course 3 -->
+          <article class="course">
+            <div class="course__thumb">
+              <img src="https://images.unsplash.com/photo-1557804483-ef3ae78eca57?auto=format&fit=crop&w=900&q=60" alt="Team learning programming" />
+              <span class="badge badge--green">BUSINESS</span>
+              <span class="price">$57</span>
+            </div>
+            <div class="course__body">
+              <h3>Learn Python Programming Masterclass</h3>
+              <div class="meta">
+                <span class="rating"><i class="ri-star-fill"></i> 5.0</span>
+                <span class="dot"></span>
+                <span class="students">265.7K students</span>
+              </div>
+            </div>
+          </article>
+          <!-- Course 4 -->
+          <article class="course">
+            <div class="course__thumb">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=60" alt="Marketing class" />
+              <span class="badge badge--purple">MARKETING</span>
+              <span class="price">$57</span>
+            </div>
+            <div class="course__body">
+              <h3>The Complete Digital Marketing Course – 12‑in‑1</h3>
+              <div class="meta">
+                <span class="rating"><i class="ri-star-fill"></i> 5.0</span>
+                <span class="dot"></span>
+                <span class="students">265.7K students</span>
+              </div>
+            </div>
+          </article>
+          <!-- Course 5 -->
+          <article class="course">
+            <div class="course__thumb">
+              <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=60" alt="Student learning" />
+              <span class="badge badge--orange">IT & SOFTWARE</span>
+              <span class="price">$57</span>
+            </div>
+            <div class="course__body">
+              <h3>Redi Level I, II and Master Teacher Program</h3>
+              <div class="meta">
+                <span class="rating"><i class="ri-star-fill"></i> 5.0</span>
+                <span class="dot"></span>
+                <span class="students">265.7K students</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="section__footer">
+          <a href="#" class="btn btn--light">Browse All Courses <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 E‑tutor. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
