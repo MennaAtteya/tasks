@@ -1,0 +1,15 @@
+:root{ --etutor-primary:#ff6b00; }
+*{ box-sizing: border-box; }
+body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+.text-primary, .btn-primary, .btn-outline-primary{ --bs-primary: var(--etutor-primary); }
+.btn-primary{ background-color: var(--etutor-primary); border-color: var(--etutor-primary); }
+.btn-primary:hover{ background-color: #e46000; border-color:#e46000; }
+.hero-img{ max-height: 360px; object-fit: cover; }
+.brand-logo{ height: 42px; filter: grayscale(100%); opacity: .9; }
+.brand-logo:hover{ filter:none; opacity:1; }
+.course-card .price{ color: var(--etutor-primary); font-weight: 700; }
+.course-card .category{ font-size: .8rem; color: #6c757d; text-transform: uppercase; letter-spacing: .05em; }
+.rating i{ color: #f59e0b; }
+.footer-col h6{ font-weight: 700; }
+.footer-col a{ text-decoration: none; color: inherit; }
+.footer-col a:hover{ color: var(--etutor-primary); }
